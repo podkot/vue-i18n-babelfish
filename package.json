@@ -1,0 +1,26 @@
+{
+  "name": "vue-i18n-babelfish",
+  "version": "1.0.0",
+  "description": "Babelfish formatter for vue-i18n",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "vue",
+    "i18n",
+    "vue-i18n",
+    "babelfish"
+  ],
+  "author": "podkot@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "babelfish": "^1"
+  },
+  "peerDependencies": {
+    "vue-i18n": "^7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8",
+    "eslint": "^4",
+    "eslint-plugin-regru": "^2"
+  }
+}

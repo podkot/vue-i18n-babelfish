@@ -1,0 +1,11 @@
+compile_options:
+  defaults:
+    - md
+    - bem
+    - tg
+  bem: default
+
+app:
+  plural: '\#{count} ((бутылка осталась|бутылки осталось|бутылок осталось))'
+  md: 'markdown + bem [link](#)'
+  placeholder: 'Placeholder'
