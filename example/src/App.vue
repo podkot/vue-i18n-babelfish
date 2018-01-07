@@ -7,7 +7,7 @@
 
     <p>
         <code>$t('app.plural', { count: 5 })</code><br />
-        (<b>NB:</b> passing scalar, `5` instead of `{ count: 5 }`, doesn't work):<br />
+        (<b>NB</b>: passing scalar, <code>5</code> instead of <code>{ count: 5 }</code>, doesn't work):<br />
         {{ $t('app.plural', { count: 5 }) }}
     </p>
 
@@ -21,6 +21,8 @@
         <code>&lt;input v-tp="'app.placeholder'"&gt;</code><br />
         <input v-tp="'app.placeholder'" />
     </p>
+
+    <h3>IE11+ (Intl-based):</h3>
 
     <p>
         <code>$d(new Date(), 'short')</code>:<br />
@@ -53,22 +55,15 @@
 
 import dict from './App.ru.yaml';
 
-// as for now, have to import formatter in every component.
-// look at https://github.com/kazupon/vue-i18n/pull/269
-import { locale, formatter } from './formatter.js';
-
-const i18n = {
-    locale,
-    formatter,
-    messages: {
-        ru: dict.locales.ru,
+export default {
+    name: 'app',
+    i18n: {
+        messages: {
+            ru: dict.locales.ru,
+        },
     },
 };
 
-export default {
-  name: 'app',
-  i18n
-}
 </script>
 
 <style>

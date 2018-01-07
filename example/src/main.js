@@ -1,12 +1,19 @@
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 import VueI18nDirectives from 'vue-i18n-directives';
+import BabelfishFormatter from 'vue-i18n-babelfish';
 
-import { locale, formatter } from './formatter.js';
 import App from './App.vue';
 
 Vue.use( VueI18n );
 Vue.use( VueI18nDirectives );
+
+const locale = 'ru';
+
+const formatter = new BabelfishFormatter( {
+    locale,
+    fallbacks : { 'uk': 'ru' },
+} );
 
 const dateTimeFormats = {
     'ru' : {
