@@ -2,6 +2,13 @@
 
 [nodeca/babelfish](https://github.com/nodeca/babelfish)-based custom formatter for [vue-i18n](https://github.com/kazupon/vue-i18n).
 
+Installation:
+```shell
+yarn add vue-i18n-babelfish
+# or
+npm i vue-i18n-babelfish
+```
+
 Usage:
 
 ```javascript
