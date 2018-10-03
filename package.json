@@ -1,8 +1,8 @@
 {
   "name": "vue-i18n-babelfish",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Babelfish formatter for vue-i18n",
-  "main": "index.js",
+  "main": "index.babel.js",
   "scripts": {},
   "keywords": [
     "vue",
